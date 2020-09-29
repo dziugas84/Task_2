@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a;
+    cout << "Iveskite studento gauta ivertinima:" << endl;
+    cin >> a;
+    if (a>=5 && a<=10)
+    {
+        cout << "Egzaminas yra islaikytas." << endl;
+    }
+    else if (a>=0 && a<5)
+    {
+        cout << "Egzanimas yra neislaikytas." << endl;
+    }
+    else if (a<0 || a>10)
+    {
+        cout << "Skaicius negali buti maziau nei 0 arba daugiau nei 10." << endl;
+    }
+    return 0;
+}
