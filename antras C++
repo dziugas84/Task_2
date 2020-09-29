@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    int suma=0;
+    cout << "Iveskite intervalo pradzia ir pabaiga: " << endl;
+    cin >> a >> b;
+    cout << "Intervalo [" << a << ";" << b << "] lyginiu skaiciu sandauga yra: " << endl;
+    for (int i=a; i<=b; i++)
+    {
+        if (i%2!=0)
+        {
+            suma=suma+i;
+        }
+    }
+    cout << suma << endl;
+    return 0;
+}
